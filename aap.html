@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do App</title>
+    <link rel="stylesheet" href="aap.css">
+</head>
+<body>
+
+    <!-- Toast Notification -->
+    <div id="toastContainer"></div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 Advanced To-Do App</h1>
+
+            <button id="themeBtn">
+                🌙 Dark Mode
+            </button>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+
+            <div class="dashboard-card">
+                <h3>Total Tasks</h3>
+                <h2 id="totalTasks">0</h2>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Completed</h3>
+                <h2 id="completedTasks">0</h2>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Pending</h3>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-section">
+
+            <div class="progress-header">
+                <span>Task Progress</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search tasks..."
+            >
+
+        </div>
+
+        <!-- Add Task Form -->
+        <div class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter Task Name"
+            >
+
+            <select id="category">
+                <option value="Study">📚 Study</option>
+                <option value="Work">💼 Work</option>
+                <option value="Personal">🏠 Personal</option>
+            </select>
+
+            <select id="priority">
+                <option value="High">🔴 High</option>
+                <option value="Medium">🟡 Medium</option>
+                <option value="Low">🟢 Low</option>
+            </select>
+
+            <input
+                type="date"
+                id="dueDate"
+            >
+
+            <button id="addBtn">
+                Add Task
+            </button>
+
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="pending">
+                Pending
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Import Export -->
+        <div class="tools">
+
+            <button id="exportBtn">
+                Export Tasks
+            </button>
+
+            <label class="import-label">
+                Import Tasks
+                <input
+                    type="file"
+                    id="importFile"
+                    hidden
+                >
+            </label>
+
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="aap.js"></script>
+
+</body>
+</html>
