@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Junction</title>
+    <link rel="stylesheet" href="tea.css">
+</head>
+<body>
+
+```
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">☕ Chai Junction</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Tea Menu</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Chai Junction</h1>
+        <p>Fresh Tea • Fast Service • Best Taste</p>
+        <a href="#menu" class="btn">Order Now</a>
+    </div>
+</section>
+
+<!-- Tea Menu -->
+<section id="menu" class="menu-section">
+    <h2>Our Tea Menu</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800" alt="Masala Chai">
+            <h3>Masala Chai</h3>
+            <p>₹20</p>
+            <button onclick="addToCart('Masala Chai',20)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800" alt="Green Tea">
+            <h3>Green Tea</h3>
+            <p>₹30</p>
+            <button onclick="addToCart('Green Tea',30)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800" alt="Lemon Tea">
+            <h3>Lemon Tea</h3>
+            <p>₹25</p>
+            <button onclick="addToCart('Lemon Tea',25)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800" alt="Black Tea">
+            <h3>Black Tea</h3>
+            <p>₹20</p>
+            <button onclick="addToCart('Black Tea',20)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800" alt="Cold Coffee">
+            <h3>Cold Coffee</h3>
+            <p>₹80</p>
+            <button onclick="addToCart('Cold Coffee',80)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=800" alt="Coffee">
+            <h3>Hot Coffee</h3>
+            <p>₹60</p>
+            <button onclick="addToCart('Hot Coffee',60)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cart -->
+<section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+
+    <ul id="cartItems"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<!-- Order Form -->
+<section id="order" class="order-section">
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <textarea id="address"
+            placeholder="Delivery Address"
+            rows="4"
+            required></textarea>
+
+        <button type="submit">
+            Confirm Order
+        </button>
+
+    </form>
+
+    <div id="orderMessage"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+        © 2026 Chai Junction |
+        Developed by Pooja Sahu
+    </p>
+</footer>
+
+<script src="tea.js"></script>
+```
+
+</body>
+</html>
